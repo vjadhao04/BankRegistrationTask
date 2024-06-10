@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.bank.bankregistrationtask.viewmodels.MainViewModel" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/s"
+            android:textColor="@color/cerise"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:text="@string/register_headline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pan_number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_pan"
+            android:autofillHints="pan number"
+            android:hint="@string/pan_number_hint"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/round_textview"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthdate"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed_day"
+                android:autofillHints="day"
+                android:hint="@string/_01"
+                android:layout_weight=".2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:background="@drawable/round_textview"
+                android:layout_marginEnd="10dp" />
+
+            <EditText
+                android:id="@+id/ed_month"
+                android:autofillHints="month"
+                android:hint="@string/_01"
+                android:inputType="number"
+                android:layout_weight=".2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/round_textview"
+                android:layout_marginEnd="10dp" />
+
+            <EditText
+                android:id="@+id/ed_year"
+                android:inputType="number"
+                android:autofillHints="year"
+                android:hint="@string/_1111"
+                android:layout_weight=".4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/round_textview"
+                android:layout_marginEnd="10dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/disclaimer"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next" />
+
+        <TextView
+            android:id="@+id/tx_no_pan"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="20dp"
+            android:text="@string/i_don_t_have_a_pan" />
+
+
+    </LinearLayout>
+</ScrollView>
+</layout>

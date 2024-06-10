@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BankRegistrationTask</string>
+    <string name="register_headline">First of the few steps to set you up with a bank Account</string>
+    <string name="s">S.</string>
+    <string name="pan_number">PAN NUMBER</string>
+    <string name="birthdate">BIRTHDATE</string>
+    <string name="disclaimer"><![CDATA[Providing PAN & Date of Birth helps us find and fetch your KYC from a central registry by the Goverment of India]]></string>
+    <string name="next">NEXT</string>
+    <string name="i_don_t_have_a_pan">I don\'t have a PAN</string>
+    <string name="_01">01</string>
+    <string name="_1111">1111</string>
+    <string name="pan_number_hint">ABCDE0000F</string>
+</resources>
